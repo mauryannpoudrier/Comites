@@ -1,0 +1,298 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #f1edff 100%);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.hero .intro {
+  margin: 0;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.hero-badge {
+  background: #fff;
+  border: 1px dashed var(--accent-2);
+  padding: 14px 16px;
+  border-radius: 14px;
+  text-align: right;
+  color: var(--accent);
+  min-width: 180px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card h2 {
+  margin: 4px 0 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  background: #fdfcff;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.filters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chip {
+  border: 1px solid var(--accent-2);
+  background: #fff;
+  color: #1f1f2b;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chip-active {
+  background: var(--accent-2);
+  border-color: var(--accent);
+  color: #2c275f;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pill {
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pill-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.category-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.category-form input[type='text'] {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(108, 99, 255, 0.18);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+button.ghost {
+  background: #fff;
+  color: #1f1f2b;
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.session-card {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+
+.session-links {
+  display: flex;
+  gap: 12px;
+}
+
+.topics-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.topic {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fdfcff;
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.topic-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  border: 1px solid var(--accent-2);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #fff;
+}
+
+.ghost-tag {
+  background: transparent;
+  border-style: dashed;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 4px 0;
+}
+
+.section-title {
+  margin-top: 12px;
+}
+
+.hero,
+.card,
+.session-card,
+.topic {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero:hover,
+.card:hover,
+.session-card:hover,
+.topic:hover {
+  transform: translateY(-2px);
+}
+
+.intro {
+  line-height: 1.5;
+}
+
+.map-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.map-card .card-header {
+  padding: 16px;
+}
